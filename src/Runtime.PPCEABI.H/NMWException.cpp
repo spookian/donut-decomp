@@ -24,4 +24,38 @@ void __construct_array(u32* arr_ptr, arrCnst constructor, arrCnst funct_final, u
 
 	return;
 }
+
+u32 __throw_catch_compare(char *unk0, char* unk1, u32 *unk2)
+{
+	*unk2 = 0;
+	switch (unk1[0])
+	{
+		case 0x0:
+		return 1;
+		break;
+		
+		case 'P':
+		char *some = unk1 + 1;
+		if (unk1[1] == 'C') some++;
+		if (some[0] == 'V') some++;
+		
+		if ( (some[0] == 'v') && ( (unk0[0] == 'P') || (unk0[0] == '*') ) ) return 1;
+		break;
+	
+		case '*':
+		case '!':
+		char *fstring = unk0 + 1;
+		char *sstring = unk1 + 1;
+		if (fstring[0] !- sstring[0]) return 0;
+		
+		break;	
+	}
+
+	while (true)
+	{
+	}
+	
+	return;
+}
+
 //constructs array using two functions and already-allocated memory

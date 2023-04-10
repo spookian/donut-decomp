@@ -1,5 +1,5 @@
-#include <hel/common.h> //scoped ptr & 
-//EXCLUDE FOR NOW; CLASSES ARE MISSING
+#include <hel/common/ScopedPtr.h> //scoped ptr & 
+#include <hel/common/>
 
 //2912 bytes for main?
 //this component might be 240 bytes long
@@ -36,7 +36,7 @@ class Component
 		ScopedPtr<AbilityGetFade>		sfx_abilfade;
 		ScopedPtr<SuperFade>			sfx_superfade;
 		ScopedPtr<SuperBackPicture>		sfx_superbpix;
-		ScopedPtr<Manager>				sfx_mgr;
+		ScopedPtr<sfx::Manager>				sfx_mgr;
 		ScopedPtr<ShadowRoot>			sfx_shadowroot;
 		ScopedPtr<DarknessRoot>			sfx_darknessroot;
 
@@ -81,3 +81,4 @@ class Component
 		// constructor is __ct__Q33scn4step9ComponentFRCQ33scn4step7Context
 		// destructor is __dt__Q33scn4step9ComponentFv
 };
+//very wip do not include if attempting to compile
